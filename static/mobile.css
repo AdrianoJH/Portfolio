@@ -11,7 +11,6 @@
 
     #header {
         left: -300px;
-        max-height: 678px;
     }
 
     .container#cop {
@@ -161,11 +160,19 @@
         margin-bottom: 50px;
     }
 
+    #location {
+        width: 285px;
+    }
+
     .endereco {
         margin-left: 50px;
     }
 
     .email {
+        margin-left: 50px;
+    }
+
+    .phone {
         margin-left: 50px;
     }
 
@@ -197,4 +204,5 @@
         transform: translate3d(0, 100%, 0);
     }
 
+    
 }

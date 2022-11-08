@@ -354,16 +354,25 @@ p.mt-3 {
 }
 
 #location {
-    height: 170px;
+    width: 450px;
+    height: 240px;
     font-weight: bold;
 }
 
 .endereco {
+    margin-left: 30px;
     margin-top: 20px;
 }
 
+.email {
+    margin-left: 30px;
+}
 
-iframe {
+.phone {
+    margin-left: 30px;
+}
+
+iframe.w-100 {
     margin-top: 30px;
 }
 
