@@ -1,0 +1,199 @@
+@media (max-width:1024px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 412px;
+    }
+
+    #header {
+        left: -300px;
+        max-height: 678px;
+    }
+
+    .container#cop {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 150px;
+        padding: 20px 15px;
+    }
+
+    i.menu-mobile {
+        display: flex;
+        left: 280px;
+    }
+
+    section#inicio {
+        width: 350px;
+        height: 630px;
+    }
+
+    section#inicio h2 {
+        margin-top: 80px;
+        font-size: 2rem;
+        margin-left: 280px;
+    }
+
+    section#inicio span#subtitle {
+        width: 255px;
+        margin-right: 150px;
+        font-size: 1rem;
+    }
+
+    section#inicio div#arraste a {
+        margin-right: 10px;
+        margin-top: -70px;
+        font-size: 12px;
+
+    }
+
+    #flecha {
+        margin-top: -75px;
+    }
+
+    #code {
+        width: 200px;
+        height: 200px;
+        margin-left: 50px;
+        margin-top: -80px;
+    }
+
+    #main {
+        width: 412px;
+        margin: 0;
+    }
+
+    #sobre {
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    h2.pt-3 {
+        margin-top: 30px;
+    }
+
+    #frase{
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    img#eu2 {
+        height: 350px;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+
+    #dev {
+        margin-left: 65px;
+        margin-top: 70px;
+    }
+
+    #text1 {
+        margin-left: 45px;
+        margin-top: 50px;
+    }
+
+    .col-md-6 {
+        margin-left: 25px;
+        margin-bottom: 30px;
+    }
+
+    #col1 {
+        margin-top: 50px;
+    }
+
+    .section-bg#habilidades {
+        margin-left: 20px;
+        width: 310px;
+    }
+
+
+    .progress {
+        width: 285px;
+        margin-left: -25px;
+    }
+
+    section#curriculo {
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    h2.pt-3 {
+        text-align: center;
+        
+    }
+
+    #cv-col {
+        width: 320px;
+    }
+
+    .cv-title {
+        margin-bottom: 80px;
+    }
+
+    #portfolio {
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    .carousel-control-prev {
+        margin-top: 6700px;
+        margin-left: 20px;
+    }
+
+    .carousel-control-next {
+        margin-top: 6700px;
+        margin-right: 75px;
+    }
+
+    #contato {
+        width: 310px;
+        margin-left: 20px;
+        margin-top: 830px;
+    }
+
+    h2#contact {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .endereco {
+        margin-left: 20px;
+    }
+
+    .email {
+        margin-left: 20px;
+    }
+
+    .form-label {
+       margin-left: -55px;
+        
+    }
+
+    .form-control {
+        width: 250px;
+        margin-left: -55px;
+    }
+
+
+    label#mensagem {
+        margin-left: -30px;
+    }
+
+    textarea#mensagem {
+        height: 130px;
+        margin-left: -30px;
+    }
+
+    #btn-enviar{
+        margin-bottom: 150px;
+    }
+
+    [data-anime="right"] {
+        transform: translate3d(0, 100%, 0);
+    }
+
+}

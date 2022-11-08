@@ -1,15 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2? family= Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700 & display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 
-html, body {
+html,
+body {
     font-family: Ubuntu, Arial;
     width: 1400px;
     height: 100%;
@@ -46,10 +46,10 @@ html, body {
     color: #aeadb1;
 }
 
-#header .profile .social-links a{
+#header .profile .social-links a {
     font-size: 1rem;
     background: #1b0e3a;
-    color : #aeadb1;
+    color: #aeadb1;
     padding: 0;
     margin-right: 1rem;
     border-radius: 50%;
@@ -62,7 +62,7 @@ html, body {
     background: #561eee;
 }
 
-.nav-menu{
+.nav-menu {
     padding: 1.5rem;
 }
 
@@ -85,7 +85,7 @@ html, body {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
     text-decoration: none;
     color: #aeadb1;
 }
@@ -93,7 +93,7 @@ html, body {
 nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover > a i {
+.nav-menu li:hover>a i {
     color: #561eee;
 }
 
@@ -115,7 +115,7 @@ section#inicio {
     height: 400px;
     margin-left: 750px;
     margin-top: -150px;
-   
+
 }
 
 section#inicio h2 {
@@ -123,18 +123,18 @@ section#inicio h2 {
     font-size: 4rem;
     margin-top: 150px;
     margin-left: 400px;
-    color: #2a006e;
-    text-shadow: 4px 4px 10px #300066;
-    
-   
-    
+    color: #4500b4;
+    text-shadow: 4px 4px 10px #3b027c;
+
+
+
 }
 
 section#inicio span#subtitle {
-    margin-left: 160px;
+    margin-left: 185px;
     font-size: 1.5rem;
-    color: #2a006e;
-    text-shadow: 4px 4px 10px #300066;
+    color: #4500b4;
+    text-shadow: 4px 4px 10px #3b027c;
 
 }
 
@@ -145,7 +145,7 @@ section#inicio div#arraste a {
     margin-bottom: -580px;
 }
 
-#flecha{
+#flecha {
     margin-bottom: -580px;
     color: #aeadb1;
 }
@@ -169,11 +169,11 @@ i.menu-mobile {
 
 
 
-.menu-nav-active{
+.menu-nav-active {
     overflow: hidden;
 }
 
-.menu-nav-active #header{
+.menu-nav-active #header {
     left: 0;
 }
 
@@ -185,7 +185,7 @@ i.menu-mobile {
 
 img#eu2 {
     height: 400px;
-} 
+}
 
 
 #text1 {
@@ -203,24 +203,6 @@ li.list-group-item {
 }
 
 
-@media (max-width:1024px) {
-    #header{
-        left: -300px;
-    }
-    i.menu-mobile{
-        display: flex;
-    }
-    section#inicio h2{
-        font-size: 2rem;
-    }
-    section#inicio span#subtitle{
-        margin-right: 0;
-        font-size: 1rem;
-    }
-    #main {
-        margin: 0;
-    }
-}
 
 *::-webkit-scrollbar {
     width: 10px;
@@ -248,7 +230,7 @@ li.list-group-item {
     background-color: #c4bcdd;
 }
 
-p.mt-3{
+p.mt-3 {
     color: #000;
 }
 
@@ -277,7 +259,7 @@ p.mt-3{
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: "Poppins" ,sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #aeadb1;
     margin-bottom: 10px;
 }
@@ -287,15 +269,15 @@ p.mt-3{
     background-color: #c4bcdd;
     padding: 5px 15px;
     display: inline-block;
-    font-weight: 600; 
-    margin-bottom: 10px; 
-} 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 .cv .cv-item p {
     font-size: 15px;
 }
 
-.cv .cv-item::before{
+.cv .cv-item::before {
     content: "";
     position: absolute;
     top: 0;
@@ -318,7 +300,7 @@ p.mt-3{
     font-weight: bold;
 }
 
-.card img{
+.card img {
     height: 250px;
 }
 
@@ -329,13 +311,14 @@ p.mt-3{
 
 .card a {
     color: #300066;
-    border: 1px solid #300066 ;
+    border: 1px solid #300066;
 }
+
 .carousel-control-prev {
     left: -35px;
     margin-top: 3400px;
-    color: #aeadb1;
-    
+    color: #c4bcdd;
+
 
 }
 
@@ -346,19 +329,20 @@ p.mt-3{
 
 }
 
-.carousel-control-prev :hover, .carousel-control-next :hover {
+.carousel-control-prev :hover,
+.carousel-control-next :hover {
     color: #561eee;
-}  
+}
 
 
 .carousel-indicators {
     margin-bottom: -35px;
-   
+
 }
 
-#btn-indicators{
+#btn-indicators {
     background-color: #c4bcdd;
-    
+
 }
 
 #contato {
@@ -378,6 +362,7 @@ p.mt-3{
     margin-top: 20px;
 }
 
+
 iframe {
     margin-top: 30px;
 }
@@ -387,8 +372,8 @@ iframe {
 }
 
 #forms1 {
-  margin-top: -10px;
-    
+    margin-top: -10px;
+
 }
 
 
@@ -422,20 +407,6 @@ iframe {
 }
 
 
-@media (max-width: 1860px){
-    .carousel-control-prev{
-        margin-left: 0;
-    }
-
-    .carousel-control-next{
-        margin-right: 0;
-    }
-
-    [data-anime="right"] {
-        transform: translate3d( 0, 100%, 0);
-    }
-}
-
 #btn-enviar {
     background-color: #300066;
     color: #c4bcdd;
@@ -465,12 +436,4 @@ iframe {
     width: 180px;
     z-index: 9997;
     transition: .3s;
-}
-
-@media (max-width: 1012px) {
-    #cop {
-        position: static;
-        width: auto;
-        padding: 20px 15px;
-    }
 }
