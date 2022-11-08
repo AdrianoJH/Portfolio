@@ -34,17 +34,17 @@
     section#inicio h2 {
         margin-top: 80px;
         font-size: 2rem;
-        margin-left: 280px;
+        margin-left: 330px;
     }
 
     section#inicio span#subtitle {
         width: 255px;
-        margin-right: 150px;
+        margin-right: 100px;
         font-size: 1rem;
     }
 
     section#inicio div#arraste a {
-        margin-right: 10px;
+        margin-right: -40px;
         margin-top: -70px;
         font-size: 12px;
 
@@ -57,7 +57,7 @@
     #code {
         width: 200px;
         height: 200px;
-        margin-left: 50px;
+        margin-left: 80px;
         margin-top: -80px;
     }
 
@@ -68,7 +68,7 @@
 
     #sobre {
         width: 310px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     h2.pt-3 {
@@ -106,7 +106,7 @@
     }
 
     .section-bg#habilidades {
-        margin-left: 20px;
+        margin-left: 50px;
         width: 310px;
     }
 
@@ -118,7 +118,7 @@
 
     section#curriculo {
         width: 310px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     h2.pt-3 {
@@ -135,24 +135,25 @@
     }
 
     #portfolio {
+        height: 1600px;
         width: 310px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .carousel-control-prev {
         margin-top: 6700px;
-        margin-left: 20px;
+        margin-left: 45px;
     }
 
     .carousel-control-next {
         margin-top: 6700px;
-        margin-right: 75px;
+        margin-right: 40px;
     }
 
     #contato {
         width: 310px;
-        margin-left: 20px;
-        margin-top: 830px;
+        margin-left: 50px;
+        margin-top: 50px;
     }
 
     h2#contact {
@@ -161,11 +162,11 @@
     }
 
     .endereco {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .email {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .form-label {
@@ -189,7 +190,7 @@
     }
 
     #btn-enviar{
-        margin-bottom: 150px;
+        margin-bottom: 200px;
     }
 
     [data-anime="right"] {
