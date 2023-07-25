@@ -201,8 +201,9 @@ img#eu2 {
     margin-top: 20px;
 }
 
-#sobre3 {
-    margin-top: 70px;
+#sobre2 {
+    margin-top: 85px !important;
+    margin-bottom: 50px !important;
 }
 
 li.list-group-item {
