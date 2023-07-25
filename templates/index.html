@@ -80,8 +80,8 @@
                     <a href="#sobre">Arraste para mais</a>
                 </div>
             </div>
-            <div class="col-md-4" id="imgEuu">
-                <img src="../static/img/Eu.jpeg" alt=" code"  />
+            <div class="col-md-4" id="imgEuuBox">
+                <img id="imgEuu" src="../static/img/Eu.jpeg" alt=" code"  />
             </div>
         </section>
 
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="row mt-4">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="boxEu2">
                         <img class="img-fluid shadow" src="../static/img/img-eu2.jpeg"
                             alt="Foto do Adriano" id="eu2" data-anime="left">
                     </div>
@@ -105,7 +105,7 @@
                         <h3 id="dev">Desenvolvedor</h3>
                         <p id="text1">Atualmente estou no inicio de carreira, estudo e desenvolvo projetos Web e mobile, trabalho principalmente com JavasScript no front-end e back-end Node.JS, e no Mobile Dart e JavaScript, utilizando os frameworks React.JS, React Native, Flutter e Express.</p>
 
-                        <div class="row mt-3 mb-3">
+                        <div class="row mt-3 mb-3" id="Sobre2">
                             <div class="col-md-6" id="col1">
                                 <ul class="list-group list-group-flush fs-5" id="list">
                                     <li class="list-group-item">Niver: <span class="fw-lighter">20 de Agosto de
@@ -115,8 +115,8 @@
                                     <li class="list-group-item">Estado: <span class="fw-lighter">Paraná</span></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <ul class="list-group list-group-flush fs-5">
+                            <div class="col-md-6" id="sobre3">
+                                <ul class="list-group list-group-flush fs-5" >
                                     <li class="list-group-item">Hobby: <span class="fw-lighter">Futebol</span></li>
                                     <li class="list-group-item">Site: <a href="#"
                                             target="_blank"
@@ -140,12 +140,9 @@
 
         <section class="mt-5 section-bg" id="habilidades">
             <div class="container pb-5">
-                <h2 class="pt-5">Habilidades</h2>
-                <p>DevStars Tech -Formação de Desenvolvedor (Back End, Front End, WebDev)
-                    Informática (Word, Excel, PowerPoint, Internet)
-                    Cebrac- (Mecânica Básica Industrial, Ajustagem, C.N.C, Usinagem).</p>
+                <h2 class="hab pt-5">Habilidades</h2>
                 <div class="row" id="progre">
-                    <div class="col-md-6">
+                    <div class="habilit col-md-6">
                         <p class="mt-3 mb-0">HTML</p>
                         <div class="progress">
                             <div class="progress-bar w-75" data-anime="left" role="progressbar"
@@ -184,7 +181,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="habilit col-md-6">
                         <p class="mt-3 mb-0">Flask</p>
                         <div class="progress">
                             <div class="progress-bar w-50" data-anime="left" role="progressbar"
@@ -230,7 +227,7 @@
                 <hr class="w-50 me-auto ms-auto">
 
                 <div class="row" id="progre">
-                    <div class="col-md-6">
+                    <div class="habilit col-md-6">
                         <p class="mt-3 mb-0">Comprometimento</p>
                         <div class="progress">
                             <div class="progress-bar w-100" data-anime="left" role="progressbar"
@@ -258,7 +255,7 @@
 
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="habilit col-md-6">
                         <p class="mt-3 mb-0">Empatia</p>
                         <div class="progress">
                             <div class="progress-bar w-100" data-anime="left" role="progressbar"
@@ -486,7 +483,7 @@
                     <div class="col-md-7 mt-5 mt-md-0">
                         <div class="card p-5 h-100 shadow border-0" id="forms" data-anime="left">
 
-                            <form class="row g-3" id="forms" action="/send" method="POST">
+                            <form class="row g-3" action="/send" method="POST" id="form-box">
                                 <div class="col-md-6" id="forms1">
                                     <label for="nome" class="form-label">Nome:</label>
                                     <input type="text" class="form-control" id="nome" name="nome"
