@@ -1,4 +1,4 @@
-@media (min-width: 325px) and (max-width:1020px) {
+@media (min-width: 325px) and (max-width:768px) {
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
@@ -13,7 +13,7 @@
     }
 }
 
-@media (max-width:1020px) {
+@media (max-width:768px) {
 
     * {
         margin: 0;
@@ -30,6 +30,9 @@
         height: auto;
         background-color: #000;
     }
+     .header-container {
+        display: none;
+     }
 
     .container#cop {
         margin-top: 0px;
@@ -38,9 +41,9 @@
     }
 
     i.menu-mobile {
-        display: flex;
+        display: flex !important;
         justify-content: end;
-        width: 100%;
+        width: 100% !important;
         margin-top: -15px;
     }
 
@@ -74,10 +77,10 @@
 
     section#inicio div#arraste a {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 295px;
         margin-right: 0px;
         font-size: 12px;
         z-index: 10;
@@ -85,7 +88,7 @@
     }
 
     #flecha {
-        margin-top: 100px;
+        margin-top: 300px;
     }
 
     #imgEuuBox {
@@ -94,14 +97,14 @@
         align-items: center;
         width: 300px;
         margin-left: 0;
-        margin-top: 0px;
+        margin-top: -50px;
     }
 
     #imgEuu {
         width: 300px !important;
         height: 380px;
         margin-left: 0;
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     #main {
