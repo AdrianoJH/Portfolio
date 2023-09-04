@@ -2,14 +2,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
-        margin-top: 7150px;
+        margin-top: 6660px;
         margin-left: 8px !important;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: center !important;
-        margin-top: 7150px;
+        margin-top: 6660px;
     }
 }
 
@@ -253,6 +253,7 @@
 
     .card {
         height: 400px;
+        margin-top: 0;
     }
 
     .card-img-top {
@@ -262,14 +263,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end;
-        margin-top: 7150px;
+        margin-top: 6660px;
         padding-right: 2px;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: end;
-        margin-top: 7150px;
+        margin-top: 6660px;
     }
 
     #contato {
