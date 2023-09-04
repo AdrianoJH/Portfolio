@@ -31,7 +31,7 @@
         background-color: #000;
     }
      header {
-        display: none;
+        display: none !important;
      }
 
     .container#cop {
