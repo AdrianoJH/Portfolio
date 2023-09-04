@@ -2,14 +2,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
-        margin-top: 6350px;
+        margin-top: 7150px;
         margin-left: 8px !important;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: center !important;
-        margin-top: 6350px;
+        margin-top: 7150px;
     }
 }
 
@@ -262,14 +262,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end;
-        margin-top: 6350px;
+        margin-top: 7150px;
         padding-right: 2px;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: end;
-        margin-top: 6350px;
+        margin-top: 7150px;
     }
 
     #contato {
