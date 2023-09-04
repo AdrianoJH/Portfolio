@@ -34,10 +34,17 @@
         display: none !important;
      }
 
+     .header-container {
+        display: none !important;
+     }
     .container#cop {
         margin-top: 0px;
         margin-left: -5px;
         width: 150px;
+    }
+
+    header.header-container .nav-menu {
+        display: none !important;
     }
 
     i.menu-mobile {
