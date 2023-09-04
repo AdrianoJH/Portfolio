@@ -35,10 +35,34 @@
         display: none !important;
     }
 
+    .header-container {
+        display: none !important;
+    }
+
+    #navbar-header {
+        display: none !important;
+    }
+
+    .nav-header {
+        display: none !important;
+    }
+
+    .nav-link-header {
+        display: none !important;
+    }
+
+    .nav-item-header {
+        display: none !important;
+    }
+
     .container#cop {
         margin-top: 0px;
         margin-left: -5px;
         width: 150px;
+    }
+
+    .social-links-header {
+        display: none !important;
     }
 
 
