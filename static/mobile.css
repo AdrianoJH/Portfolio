@@ -35,10 +35,6 @@
         display: none !important;
     }
 
-    header.nav-item{
-        display: none !important;
-    }
-
     .container#cop {
         margin-top: 0px;
         margin-left: -5px;

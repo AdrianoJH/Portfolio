@@ -27,15 +27,15 @@ i.menu-mobile {
     height: auto;
 }
 
-.header-container .social-links {
+.social-links-header {
     display: flex;
     align-items: center;
-    width:300px;
-    height: 52px;
+    width: 300px;
+    height: 40px;
     padding-left: 80px;
 }
 
-.header-container .social-links a {
+.social-links-header a {
     font-size: 1rem;
     color: #aeadb1;
     padding: 0;
@@ -45,20 +45,20 @@ i.menu-mobile {
     text-decoration: none;
 }
 
-.header-container .social-links a:hover {
+.social-links-header a:hover {
     color: #561eee;
 }
 
 
-.header-container .nav-menu {
+.nav-menu-header {
     display: flex;
     justify-content: end;
     width: 100%;
     padding: 1.5rem;
 }
 
-.header-container .nav-menu a,
-.header-container .nav-menu a:focus {
+.nav-menu-header a,
+.nav-menu-header a:focus {
     display: flex;
     align-items: center;
     color: #aeadb1;
@@ -66,26 +66,42 @@ i.menu-mobile {
     font-size: 15px;
 }
 
-.header-container .nav-menu a,
-.header-container .nav-menu a:focus {
+.nav-menu-header a,
+.nav-menu-header a:focus {
     font-size: 24px;
     padding-right: 0.8rem;
     color: #aeadb1;
 }
 
-.header-container .nav-menu a:hover,
-.header-container .nav-menu .active,
-.header-container .nav-menu .active:focus,
-.header-container .nav-menu li:hover>a {
+.nav-menu-header a:hover,
+.nav-menu-header .active,
+.nav-menu-header .active:focus,
+.nav-menu-header li:hover>a {
     text-decoration: none;
     color: #aeadb1;
 }
 
-.header-container nav-menu a:hover,
-.header-container .nav-menu .active,
-.header-container .nav-menu .active:focus,
-.header-container .nav-menu li:hover>a {
+.nav-menu-header a:hover,
+.nav-menu-header .active,
+.nav-menu-header .active:focus,
+.nav-menu-header li:hover>a {
     color: #561eee;
+}
+
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: auto;
+}
+
+.nav-item-header {
+    list-style: none;
+}
+
+.nav-link-header {
+    text-decoration: none;
 }
 
 #header {
@@ -163,7 +179,7 @@ i.menu-mobile {
     color: #aeadb1;
 }
 
-nav-menu a:hover i,
+.nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
