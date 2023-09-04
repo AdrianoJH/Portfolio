@@ -30,22 +30,33 @@
         height: auto;
         background-color: #000;
     }
-     header {
-        display: none !important;
-     }
 
-     .header-container {
+    header {
         display: none !important;
-     }
+    }
+
+    .header-container {
+        display: none !important;
+    }
+
+    header.header-container #navbar {
+        display: none !important;
+    }
+
+    header.header-container #navbar .nav {
+        display: none !important;
+    }
+
+    header.header-container #navbar .nav .nav-item{
+        display: none !important;
+    }
+
     .container#cop {
         margin-top: 0px;
         margin-left: -5px;
         width: 150px;
     }
 
-    header.header-container .nav-menu {
-        display: none !important;
-    }
 
     i.menu-mobile {
         display: flex !important;
