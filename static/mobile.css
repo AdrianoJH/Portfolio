@@ -2,14 +2,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
-        margin-top: 6660px;
+        margin-top: 7350px;
         margin-left: 8px !important;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: center !important;
-        margin-top: 6660px;
+        margin-top: 7350px;
     }
 }
 
@@ -257,20 +257,37 @@
     }
 
     .card-img-top {
-        height: 150px;
+        height: 230px !important;
+    }
+
+    .card-title {
+        font-size: 19px;
+    }
+
+    .card-body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .card-text {
+        font-size: 14px;
     }
 
     .carousel-control-prev {
         display: flex;
         justify-content: end;
-        margin-top: 6660px;
+        margin-top: 7350px;
         padding-right: 2px;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: end;
-        margin-top: 6660px;
+        margin-top: 7350px;
+    }
+
+    .carousel-indicators button {
+        margin-bottom: 10px;
     }
 
     #contato {

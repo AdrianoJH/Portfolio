@@ -493,20 +493,22 @@ p.mt-3 {
 }
 
 .card a {
+    position: absolute;
+    bottom: 15px;
     color: #300066;
     border: 1px solid #300066;
 }
 
 .carousel-control-prev {
     left: -15px;
-    margin-top: 3480px;
+    margin-top: 3800px;
     color: #c4bcdd;
 
 
 }
 
 .carousel-control-next {
-    margin-top: 3480px;
+    margin-top: 3800px;
     color: #aeadb1;
 
 }
@@ -518,13 +520,12 @@ p.mt-3 {
 
 
 .carousel-indicators {
-    margin-bottom: -35px;
+    margin-bottom: -50px;
 
 }
 
-#btn-indicators {
-    background-color: #c4bcdd;
-
+.carousel-indicators button {
+    background-color: #c4bcdd !important;
 }
 
 #contato {
@@ -558,6 +559,10 @@ p.mt-3 {
 
 .phone {
     margin-left: 30px;
+}
+
+.phone a {
+    text-decoration: none;
 }
 
 .whats {
