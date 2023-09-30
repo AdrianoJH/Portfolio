@@ -23,7 +23,7 @@ i.menu-mobile {
 .header-container {
     display: flex;
     justify-content: space-between;
-    width: 96%;
+    width: 100%;
     height: auto;
 }
 
@@ -32,7 +32,7 @@ i.menu-mobile {
     align-items: center;
     width: 300px;
     height: 40px;
-    padding-left: 80px;
+    padding-left: 100px;
 }
 
 .social-links-header a {
@@ -187,14 +187,19 @@ i.menu-mobile {
 }
 
 #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 0;
     width: 100%;
     background-color: #000;
 }
 
 section #inicio {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 725px;
+    height: 100%;
     background-color: #000;
 }
 
@@ -202,7 +207,7 @@ section #inicio {
     position: relative;
     width: 200px;
     height: 200px;
-    margin-left: 180px;
+    margin-left: 120px;
     margin-top: 100px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
@@ -266,15 +271,15 @@ section #inicio {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 530px;
+    width: 400px;
     height: 580px;
-    margin-left: 875px;
-    margin-top: -270px;
+    margin-left: 85px;
+    margin-top: -370px;
 }
 
 #imgEuu {
     width: 400px;
-    height: 500px;
+    height: 450px;
 }
 
 section#inicio h2 {
@@ -297,15 +302,15 @@ section#inicio span#subtitle {
 
 section#inicio div#arraste a {
     margin-right: -480px;
+    margin-top: -70px;
     text-decoration: none;
     color: #aeadb1;
-    margin-bottom: -600px;
     z-index: 9999999;
 
 }
 
 #flecha {
-    margin-bottom: -590px;
+    margin-top: -80px;
     color: #aeadb1;
     z-index: 10;
 
@@ -338,10 +343,10 @@ i.menu-mobile {
     left: 0;
 }
 
-#sobre {
-    width: 1250px;
-    margin-left: 115px;
-    margin-top: 80px !important;
+section#sobre {
+    max-width: 90% !important;
+    margin-top: 50px !important;
+    padding-top: 50px;
     background-color: #1b013d;
     color: #aeadb1;
 }
@@ -386,21 +391,23 @@ li.list-group-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1250px;
-    margin-left: 115px;
+    width: 90% !important;
     font-weight: bold;
     background-color: #1b013d;
     color: #aeadb1;
 }
 
 .hab {
-    margin-left: 10px;
+    margin-left: 10px ;
     margin-bottom: 70px !important;
 }
 
+.container {
+    margin-left: 45px;
+}
+
 #progre {
-    width: 1200px;
-    margin-left: 10px;
+    width: 100%;
     background-color: #c4bcdd;
 }
 
@@ -413,8 +420,7 @@ p.mt-3 {
 }
 
 #curriculo {
-    width: 1250px;
-    margin-left: 115px;
+    width: 90%;
     background-color: #1b013d;
     color: #aeadb1;
 }
@@ -471,8 +477,9 @@ p.mt-3 {
 }
 
 #portfolio {
-    width: 1250px;
+    width: 90%;
     height: 600px;
+    padding: 20px;
 }
 
 .card {
@@ -499,18 +506,27 @@ p.mt-3 {
     border: 1px solid #300066;
 }
 
+.button-carousel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .carousel-control-prev {
-    left: -15px;
-    margin-top: 3800px;
+    margin-top: 3730px;
     color: #c4bcdd;
+}
 
-
+.carousel-control-prev span {
+    margin-left: -80px;
 }
 
 .carousel-control-next {
-    margin-top: 3800px;
+    margin-top: 3730px;
     color: #aeadb1;
+}
 
+.carousel-control-next span {
+    margin-right: -90px;
 }
 
 .carousel-control-prev :hover,
@@ -529,8 +545,8 @@ p.mt-3 {
 }
 
 #contato {
-    width: 1250px;
-    margin-left: 115px;
+    width: 90%;
+    margin-top: 70px;
     background-color: #1b013d;
     color: #aeadb1;
     font-weight: bold;

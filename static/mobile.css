@@ -1,15 +1,16 @@
-@media (min-width: 321px) and (max-width:768px) {
+@media (min-width: 325px) and (max-width:768px) {
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
-        margin-top: 7350px !important;
-        margin-left: 8px !important;
+        margin-top: 6980px !important;
+        padding-right: 30px !important;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: center !important;
-        margin-top: 7350px;
+        margin-top: 6980px !important;
+        padding-left: 35px;
     }
 }
 
@@ -84,6 +85,7 @@
         align-items: center;
         width: 100%;
         height: auto;
+        margin-bottom: 50px !important;
     }
 
     .cube {
@@ -156,12 +158,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 285px;
+        width: 100%;
     }
 
     #sobre {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
         margin-left: 0;
     }
@@ -186,9 +189,10 @@
     }
 
     img#eu2 {
+        width: 90%;
         height: 350px;
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     .list-group {
@@ -218,6 +222,10 @@
         margin-left: 0;
     }
 
+    .container {
+        margin-left: 0;
+    }
+
     #progre {
         width: 100%;
         margin-left: 0;
@@ -228,7 +236,7 @@
     }
 
     section#curriculo {
-        width: 100%;
+        width: 90%;
         margin-left: 0;
     }
 
@@ -249,6 +257,7 @@
         width: 100%;
         height: 100%;
         margin-left: 0;
+        padding: 5px;
     }
 
     .card {
@@ -276,14 +285,22 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end;
-        margin-top: 7350px !important;
-        padding-right: 2px;
+        margin-top: 7250px;
+        padding-right: 18px;
+    }
+
+    .carousel-control-prev span {
+        margin-left: 0;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: end;
-        margin-top: 7350px !important;
+        margin-top: 7250px;
+    }
+
+    .carousel-control-next span {
+        margin-right: 0;
     }
 
     .carousel-indicators button {
@@ -291,9 +308,19 @@
     }
 
     #contato {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        width: 90%;
         margin-left: 0;
         margin-top: 50px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
 
     h2#contact {
@@ -303,7 +330,7 @@
     }
 
     #location {
-        width: 100%;
+        width: 90%;
         margin-left: 0;
     }
 
@@ -323,15 +350,23 @@
 
     iframe.w-100 {
         margin-left: 0;
-        width: 100% !important;
+        width: 90% !important;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+        width: 100%;
     }
 
     #forms {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 100%;
+        align-items: center !important;
+        width: 85%;
         height: 420px !important;
         margin-left: 0;
         margin-top: -20px;
