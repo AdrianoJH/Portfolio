@@ -203,10 +203,6 @@ section #inicio {
     background-color: #000;
 }
 
-.row {
-    --bs-gutter-x: 0 !important;
-}
-
 .cube {
     position: relative;
     width: 200px;
@@ -403,20 +399,20 @@ li.list-group-item {
 }
 
 .hab {
-    margin-left: 10px ;
+    margin-left: 10px;
     margin-bottom: 70px !important;
 }
 
-.container {
-    margin-left: 45px;
-}
 
 #progre {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
     background-color: #c4bcdd;
 }
 
 .habilit {
+    padding-left: 20px;
     margin-bottom: 40px;
 }
 
@@ -516,6 +512,7 @@ p.mt-3 {
     justify-content: space-between;
     width: 100%;
 }
+
 .carousel-control-prev {
     margin-top: 3730px;
     color: #c4bcdd;
