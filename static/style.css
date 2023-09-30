@@ -32,7 +32,7 @@ i.menu-mobile {
     align-items: center;
     width: 300px;
     height: 40px;
-    padding-left: 100px;
+    padding-left: 85px;
 }
 
 .social-links-header a {
@@ -302,7 +302,7 @@ section#inicio span#subtitle {
 
 section#inicio div#arraste a {
     margin-right: -480px;
-    margin-top: -70px;
+    margin-top: -20px;
     text-decoration: none;
     color: #aeadb1;
     z-index: 9999999;
@@ -310,7 +310,7 @@ section#inicio div#arraste a {
 }
 
 #flecha {
-    margin-top: -80px;
+    margin-top: -30px;
     color: #aeadb1;
     z-index: 10;
 
