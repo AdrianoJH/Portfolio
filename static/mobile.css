@@ -2,14 +2,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
-        margin-top: 6980px !important;
-        padding-right: 30px !important;
+        margin-top: 7090px !important;
+        padding-right: 25px !important;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: center !important;
-        margin-top: 6980px !important;
+        margin-top: 7090px !important;
         padding-left: 35px;
     }
 }
@@ -167,6 +167,8 @@
         align-items: center;
         width: 100%;
         margin-left: 0;
+        padding-left: 0 !important;
+
     }
 
     h2.pt-3 {
