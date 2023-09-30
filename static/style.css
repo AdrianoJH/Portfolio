@@ -273,7 +273,7 @@ section #inicio {
     align-items: center;
     width: 400px;
     height: 580px;
-    margin-left: 85px;
+    margin-left: 125px;
     margin-top: -370px;
 }
 
@@ -301,7 +301,7 @@ section#inicio span#subtitle {
 }
 
 section#inicio div#arraste a {
-    margin-right: -480px;
+    margin-right: -530px;
     margin-top: -20px;
     text-decoration: none;
     color: #aeadb1;
