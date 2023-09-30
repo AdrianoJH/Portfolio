@@ -2,7 +2,7 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
-        margin-top: 7350px;
+        margin-top: 7350px !important;
         margin-left: 8px !important;
     }
 
@@ -276,14 +276,14 @@
     .carousel-control-prev {
         display: flex;
         justify-content: end;
-        margin-top: 7350px;
+        margin-top: 7350px !important;
         padding-right: 2px;
     }
 
     .carousel-control-next {
         display: flex;
         justify-content: end;
-        margin-top: 7350px;
+        margin-top: 7350px !important;
     }
 
     .carousel-indicators button {

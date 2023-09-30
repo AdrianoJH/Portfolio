@@ -563,6 +563,8 @@ p.mt-3 {
 
 .phone a {
     text-decoration: none;
+    border: none;
+    color: #000;
 }
 
 .whats {
