@@ -1,4 +1,4 @@
-@media (min-width: 325px) and (max-width:768px) {
+@media (min-width: 321px) and (max-width:768px) {
     .carousel-control-prev {
         display: flex;
         justify-content: end !important;
