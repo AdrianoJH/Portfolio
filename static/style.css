@@ -293,7 +293,7 @@ section#inicio h2 {
 }
 
 section#inicio span#subtitle {
-    margin-left: -280px;
+    margin-left: -345px;
     font-size: 1.5rem;
     color: #e4d3ff;
     text-shadow: 4px 4px 10px #3b027c;
@@ -430,6 +430,10 @@ p.mt-3 {
     margin-top: -40px;
 }
 
+#cv-col {
+    margin-top: 30px;
+}
+
 .cv .cv-title {
     font-weight: 700;
     margin-bottom: 30px;
@@ -507,6 +511,12 @@ p.mt-3 {
     border: 1px solid #300066;
 }
 
+.card a:hover {
+    background-color: #300066;
+    color: #c4bcdd;
+    border: 1px solid #0d001f;
+}
+
 .button-carousel {
     display: flex;
     justify-content: space-between;
@@ -544,6 +554,11 @@ p.mt-3 {
 
 .carousel-indicators button {
     background-color: #c4bcdd !important;
+}
+
+.carousel-indicators button:hover {
+    background-color: #561eee !important;
+
 }
 
 #contato {
@@ -648,6 +663,11 @@ iframe.w-100 {
     background-color: #300066;
     color: #c4bcdd;
     border: 2px solid #0d001f;
+}
+
+#btn-enviar:hover {
+    background-color: #0d001f;
+    color: #6000ce;
 }
 
 #btn-enviar-loader {
