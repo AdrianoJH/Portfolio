@@ -604,6 +604,16 @@ p.mt-3 {
     color: #000;
 }
 
+.whats:hover {
+    color: #300066;
+}
+
+.whats-link:hover {
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
 
 iframe.w-100 {
     width: 450px !important;
