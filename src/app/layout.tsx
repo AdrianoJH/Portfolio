@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import { Providers } from "@/context/Providers";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, personJsonLd, websiteJsonLd } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,13 +20,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://adriano-portfolio.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Adriano Souza — Desenvolvedor Full Stack",
+    default: SITE_NAME,
     template: "%s | Adriano Souza",
   },
-  description:
-    "Desenvolvedor Full Stack com mais de 3 anos de experiência em web, mobile e serviços na nuvem — React, Next.js, Node.js, TypeScript, Flutter e AWS.",
+  description: SITE_DESCRIPTION,
   keywords: [
     "Desenvolvedor Full Stack",
     "React",
@@ -35,18 +36,27 @@ export const metadata: Metadata = {
     "AWS",
     "Adriano Souza",
   ],
-  authors: [{ name: "Adriano Rodrigues de Souza" }],
+  authors: [{ name: "Adriano Rodrigues de Souza", url: SITE_URL }],
+  creator: "Adriano Rodrigues de Souza",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Adriano Souza — Desenvolvedor Full Stack",
+    title: SITE_NAME,
     description:
       "Portfólio de Adriano Souza — web, mobile e nuvem com React, Next.js, Node.js, Flutter e AWS.",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     type: "website",
     locale: "pt_BR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adriano Souza — Desenvolvedor Full Stack",
+    title: SITE_NAME,
     description: "Web, mobile e nuvem com React, Next.js, Node.js, Flutter e AWS.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 
@@ -58,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <body>
+        <JsonLd data={[personJsonLd(), websiteJsonLd()]} />
         <Providers>
           <Header />
           {children}
