@@ -10,18 +10,17 @@ export const es: Dictionary = {
     contact: "Contacto",
   },
   hero: {
-    greeting: "Hola, soy",
-    role: "Desarrollador Full Stack",
-    tagline: "Creo aplicaciones web, móviles y servicios en la nube — del front-end en React/Next.js al back-end serverless en AWS.",
     available: "Abierto a nuevas oportunidades",
+    role: "Desarrollador Full Stack",
+    line: "Aplicaciones web, mobile y back-end — de la arquitectura a la entrega.",
     ctaProjects: "Ver proyectos",
     ctaContact: "Contactar",
     scroll: "Desliza hacia abajo",
   },
   about: {
     title: "Sobre mí",
-    p1: "Desarrollador Full Stack con más de 3 años de experiencia, trabajando de punta a punta: del front-end en React/Next.js al back-end en Node.js y Python, pasando por móvil con Flutter y nube AWS.",
-    p2: "Hoy trabajo en ChronoMAX en una plataforma de cronometraje y gestión de eventos de carrera — microservicios serverless, tiempo real, pagos e IA. Valoro el código limpio, resolver problemas reales y aprender todo el tiempo.",
+    p1: "Desarrollador full-stack con más de 3 años de experiencia, trabajando del front-end al back-end: React y Next.js en la interfaz, Node.js y Python en el servidor, Flutter en el móvil y AWS en la nube.",
+    p2: "En ChronoMAX, trabajo en un ecosistema de productos para deporte y eventos de carrera — web, móvil y microservicios serverless en AWS, con tiempo real, pagos e IA. Priorizo código limpio, decisiones bien fundamentadas y entregas confiables.",
     labels: {
       location: "Ubicación",
       experience: "Experiencia",
@@ -54,7 +53,7 @@ export const es: Dictionary = {
   },
   projects: {
     title: "Proyectos",
-    subtitle: "Algunos trabajos que representan mi momento actual.",
+    subtitle: "Proyectos profesionales recientes.",
     featured: "Proyectos destacados",
     viewAll: "Ver todos los proyectos",
     visit: "Visitar",
@@ -63,16 +62,22 @@ export const es: Dictionary = {
   },
   projectsPage: {
     title: "Todos los proyectos",
-    subtitle: "Una selección de trabajos profesionales y personales.",
+    subtitle: "Una selección de mis trabajos.",
     backHome: "Volver al inicio",
   },
   caseStudy: {
     overview: "Visión general",
+    modules: "Módulos principales",
+    highlights: "Aspectos técnicos",
     stack: "Tecnologías",
     myRole: "Mi rol",
     year: "Año",
     visit: "Visitar proyecto",
     code: "Ver código",
+    appStore: "App Store",
+    playStore: "Google Play",
+    privateNote:
+      "Plataforma privada — el acceso requiere inicio de sesión y lo que se ve depende del nivel de permiso del usuario.",
     back: "Volver a proyectos",
   },
   contact: {
@@ -94,6 +99,8 @@ export const es: Dictionary = {
   footer: {
     madeWith: "Hecho con Next.js, TypeScript y styled-components",
     rights: "Todos los derechos reservados.",
+    navTitle: "Navegación",
+    connectTitle: "Conéctate",
   },
   a11y: {
     toggleTheme: "Cambiar tema claro/oscuro",

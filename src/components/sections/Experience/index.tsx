@@ -4,7 +4,7 @@ import { useTranslation } from "@/context/LanguageContext";
 import { experience } from "@/lib/content/experience";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Timeline, Item, Period, Company, Role, Desc } from "./styles";
+import { List, Item, Period, Content, Company, Role, Desc } from "./styles";
 
 export function Experience() {
   const { t, locale } = useTranslation();
@@ -15,20 +15,21 @@ export function Experience() {
         eyebrow={t.nav.experience}
         title={t.experience.title}
         subtitle={t.experience.subtitle}
-        align="center"
       />
-      <Timeline>
+      <List>
         {experience.map((item) => (
           <Item key={item.company}>
             <Period>
               {item.start} — {item.end ?? t.experience.present}
             </Period>
-            <Company>{item.company}</Company>
-            <Role>{item.role[locale]}</Role>
-            <Desc>{item.description[locale]}</Desc>
+            <Content>
+              <Company>{item.company}</Company>
+              <Role>{item.role[locale]}</Role>
+              <Desc>{item.description[locale]}</Desc>
+            </Content>
           </Item>
         ))}
-      </Timeline>
+      </List>
     </Section>
   );
 }

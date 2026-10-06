@@ -48,7 +48,7 @@ export function Contact() {
   const channels = [
     { icon: <MailIcon />, label: t.contact.title, value: profile.email, href: emailLink },
     { icon: <WhatsappIcon />, label: "WhatsApp", value: profile.phoneDisplay, href: whatsappLink },
-    { icon: <LinkedinIcon />, label: "LinkedIn", value: "/adriano-rodrigues", href: profile.linkedin },
+    { icon: <LinkedinIcon />, label: "LinkedIn", value: "/adrianorodrigues-devfullstack", href: profile.linkedin },
     { icon: <MapPinIcon />, label: t.contact.location, value: t.about.values.location, href: whatsappLink },
   ];
 

@@ -38,16 +38,19 @@ export const Cover = styled.div`
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.colors.border};
   margin-bottom: ${({ theme }) => theme.space.xl};
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 16 / 9;
   background: ${({ theme }) => theme.colors.surfaceAlt};
+  box-shadow: 0 24px 60px ${({ theme }) => theme.colors.shadow};
 
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: top center;
   }
 
   ${media.md} {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 11;
   }
 `;
 
@@ -121,6 +124,43 @@ export const TagList = styled.div`
 
 export const Actions = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: ${({ theme }) => theme.space.sm};
+`;
+
+export const PrivateNote = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.sm};
+  line-height: 1.6;
+  color: ${({ theme }) => theme.colors.textMuted};
+  padding-top: ${({ theme }) => theme.space.md};
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
+`;
+
+export const HighlightList = styled.ul`
+  display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.space.sm};
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: ${({ theme }) => theme.space.lg};
+    color: ${({ theme }) => theme.colors.text};
+    font-size: ${({ theme }) => theme.fontSizes.lg};
+    line-height: 1.7;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.65em;
+      width: 7px;
+      height: 7px;
+      border-radius: 2px;
+      background: ${({ theme }) => theme.colors.primary};
+    }
+  }
 `;

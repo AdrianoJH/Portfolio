@@ -6,7 +6,12 @@ import type { Project } from "@/lib/types";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Tag } from "@/components/ui/Tag";
-import { ArrowRightIcon, ExternalLinkIcon, GithubIcon } from "@/components/ui/Icons";
+import {
+  ArrowRightIcon,
+  ExternalLinkIcon,
+  GithubIcon,
+  DownloadIcon,
+} from "@/components/ui/Icons";
 import {
   Wrapper,
   Back,
@@ -18,6 +23,7 @@ import {
   Block,
   TagList,
   Actions,
+  HighlightList,
 } from "./styles";
 
 export function ProjectCaseStudy({ project }: { project: Project }) {
@@ -49,6 +55,28 @@ export function ProjectCaseStudy({ project }: { project: Project }) {
             {project.description[locale].map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
+
+            {project.modules && (
+              <>
+                <h2>{t.caseStudy.modules}</h2>
+                <HighlightList>
+                  {project.modules[locale].map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </HighlightList>
+              </>
+            )}
+
+            {project.highlights && (
+              <>
+                <h2>{t.caseStudy.highlights}</h2>
+                <HighlightList>
+                  {project.highlights[locale].map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </HighlightList>
+              </>
+            )}
           </Content>
 
           <Aside>
@@ -86,6 +114,32 @@ export function ProjectCaseStudy({ project }: { project: Project }) {
                 >
                   <ExternalLinkIcon />
                   {t.caseStudy.visit}
+                </Button>
+              )}
+              {project.links.appStore && (
+                <Button
+                  as="a"
+                  href={project.links.appStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                  size="md"
+                >
+                  <DownloadIcon />
+                  {t.caseStudy.appStore}
+                </Button>
+              )}
+              {project.links.playStore && (
+                <Button
+                  as="a"
+                  href={project.links.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                  size="md"
+                >
+                  <DownloadIcon />
+                  {t.caseStudy.playStore}
                 </Button>
               )}
               {project.links.repo && (

@@ -50,10 +50,21 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
   font-size: ${({ theme }) => theme.fontSizes.sm};
   font-weight: ${({ theme }) => theme.fontWeights.medium};
-  color: ${({ theme }) => theme.colors.textMuted};
+  color: ${({ theme }) => theme.colors.text};
   transition: color ${({ theme }) => theme.transitions.base};
+
+  i {
+    font-style: normal;
+    font-family: ${({ theme }) => theme.fonts.mono};
+    font-size: 0.72rem;
+    font-weight: ${({ theme }) => theme.fontWeights.semibold};
+    color: ${({ theme }) => theme.colors.primary};
+  }
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};

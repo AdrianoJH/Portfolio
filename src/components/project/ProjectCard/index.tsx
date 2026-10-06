@@ -3,65 +3,64 @@
 import Link from "next/link";
 import { useTranslation } from "@/context/LanguageContext";
 import type { Project } from "@/lib/types";
-import { Card } from "@/components/ui/Card";
-import { Tag } from "@/components/ui/Tag";
-import { Button } from "@/components/ui/Button";
-import { IconButton } from "@/components/ui/IconButton";
-import { ArrowRightIcon, ExternalLinkIcon, GithubIcon } from "@/components/ui/Icons";
-import { Thumb, Badge, Body, TopRow, Summary, TechRow, Footer, Links } from "./styles";
+import { primaryLink } from "@/lib/projectUrl";
+import { ExternalLinkIcon, ArrowRightIcon } from "@/components/ui/Icons";
+import {
+  Tile,
+  Shot,
+  Scrim,
+  Visit,
+  CaseLink,
+  Info,
+  Meta,
+  Title,
+  Summary,
+  Tech,
+  More,
+} from "./styles";
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, featured }: { project: Project; featured?: boolean }) {
   const { t, locale } = useTranslation();
+  const link = primaryLink(project);
 
   return (
-    <Card interactive>
-      <Thumb>
-        {project.highlight && <Badge>★ {t.projects.featured}</Badge>}
+    <Tile $featured={featured}>
+      <Shot>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={project.image} alt={project.title} loading="lazy" />
-      </Thumb>
-      <Body>
-        <TopRow>
-          <h3>{project.title}</h3>
+      </Shot>
+      <Scrim />
+
+      <CaseLink href={`/projetos/${project.slug}`} aria-label={project.title} />
+
+      {link && (
+        <Visit
+          as="a"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t.projects.visit}
+        >
+          <ExternalLinkIcon />
+        </Visit>
+      )}
+
+      <Info>
+        <Meta>
+          <Title>{project.title}</Title>
           <span>{project.year}</span>
-        </TopRow>
-        <Summary>{project.summary[locale]}</Summary>
-        <TechRow>
-          {project.tech.slice(0, 5).map((tech) => (
-            <Tag key={tech}>{tech}</Tag>
+        </Meta>
+        {featured && <Summary>{project.summary[locale]}</Summary>}
+        <Tech>
+          {project.tech.slice(0, featured ? 6 : 4).map((tech) => (
+            <span key={tech}>{tech}</span>
           ))}
-        </TechRow>
-        <Footer>
-          <Button as={Link} href={`/projetos/${project.slug}`} variant="ghost" size="md">
-            {t.projects.caseStudy}
-            <ArrowRightIcon />
-          </Button>
-          <Links>
-            {project.links.demo && (
-              <IconButton
-                as="a"
-                href={project.links.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                label={t.projects.visit}
-              >
-                <ExternalLinkIcon />
-              </IconButton>
-            )}
-            {project.links.repo && (
-              <IconButton
-                as="a"
-                href={project.links.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                label={t.projects.code}
-              >
-                <GithubIcon />
-              </IconButton>
-            )}
-          </Links>
-        </Footer>
-      </Body>
-    </Card>
+        </Tech>
+        <More>
+          {t.projects.caseStudy}
+          <ArrowRightIcon />
+        </More>
+      </Info>
+    </Tile>
   );
 }

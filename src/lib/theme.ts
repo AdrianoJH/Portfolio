@@ -6,7 +6,8 @@
 
 const shared = {
   fonts: {
-    body: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`,
+    body: `var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`,
+    heading: `var(--font-space-grotesk), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`,
     mono: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace`,
   },
   fontSizes: {

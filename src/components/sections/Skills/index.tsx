@@ -4,9 +4,7 @@ import { useTranslation } from "@/context/LanguageContext";
 import { skillCategories } from "@/lib/content/skills";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Card } from "@/components/ui/Card";
-import { Tag } from "@/components/ui/Tag";
-import { Grid, CategoryCard, CatTitle, TagList } from "./styles";
+import { Grid, Group, GroupTitle, Pills, Pill } from "./styles";
 
 export function Skills() {
   const { t } = useTranslation();
@@ -20,16 +18,14 @@ export function Skills() {
       />
       <Grid>
         {skillCategories.map((category) => (
-          <Card key={category.key}>
-            <CategoryCard>
-              <CatTitle>{t.skills.categories[category.key]}</CatTitle>
-              <TagList>
-                {category.items.map((item) => (
-                  <Tag key={item}>{item}</Tag>
-                ))}
-              </TagList>
-            </CategoryCard>
-          </Card>
+          <Group key={category.key}>
+            <GroupTitle>{t.skills.categories[category.key]}</GroupTitle>
+            <Pills>
+              {category.items.map((item) => (
+                <Pill key={item}>{item}</Pill>
+              ))}
+            </Pills>
+          </Group>
         ))}
       </Grid>
     </Section>

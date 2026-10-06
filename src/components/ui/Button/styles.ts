@@ -45,6 +45,12 @@ export const StyledButton = styled.button<{ $variant: ButtonVariant; $size: Butt
   padding: ${({ $size }) => ($size === "lg" ? "0.85rem 1.7rem" : "0.6rem 1.25rem")};
   font-size: ${({ $size, theme }) => ($size === "lg" ? theme.fontSizes.md : theme.fontSizes.sm)};
 
+  svg {
+    width: 1.15em;
+    height: 1.15em;
+    flex-shrink: 0;
+  }
+
   ${({ $variant }) => variantStyles[$variant]}
 
   &:hover {

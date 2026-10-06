@@ -3,15 +3,15 @@ import type { SkillCategory } from "../types";
 export const skillCategories: SkillCategory[] = [
   {
     key: "frontend",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "Vue.js", "styled-components", "SASS", "HTML", "CSS"],
+    items: ["React", "Next.js", "TypeScript", "JavaScript", "Vue.js", "Redux", "styled-components", "Tailwind CSS", "Material-UI", "Three.js", "Vite", "SASS", "HTML", "CSS"],
   },
   {
     key: "backend",
-    items: ["Node.js", "Express", "Prisma", "Python", "Flask", "REST APIs"],
+    items: ["Node.js", "Express", "Prisma", "Python", "Flask", "Socket.io", "REST APIs"],
   },
   {
     key: "cloud",
-    items: ["AWS", "Lambda", "S3", "DynamoDB", "Serverless", "Docker", "CI/CD", "Git"],
+    items: ["AWS", "Lambda", "S3", "DynamoDB", "Serverless", "Supabase", "Vercel", "Docker", "CI/CD", "Git"],
   },
   {
     key: "mobile",
@@ -23,6 +23,6 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     key: "practices",
-    items: ["Scrum", "Kanban", "Clean Code", "Code Review"],
+    items: ["Scrum", "Kanban", "Clean Code", "Code Review", "PWA", "SEO"],
   },
 ];

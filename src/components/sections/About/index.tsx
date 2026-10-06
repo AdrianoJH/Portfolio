@@ -22,7 +22,7 @@ export function About() {
       <Grid>
         <Portrait>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/sobre.jpeg" alt={t.about.title} />
+          <img src="/images/about.jpeg" alt={t.about.title} />
         </Portrait>
         <Text>
           <p>{t.about.p1}</p>

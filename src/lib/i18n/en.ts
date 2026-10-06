@@ -10,18 +10,17 @@ export const en: Dictionary = {
     contact: "Contact",
   },
   hero: {
-    greeting: "Hi, I'm",
-    role: "Full Stack Developer",
-    tagline: "I build web, mobile and cloud applications — from React/Next.js front-ends to serverless back-ends on AWS.",
     available: "Open to new opportunities",
+    role: "Full Stack Developer",
+    line: "Web, mobile and back-end applications — from architecture to delivery.",
     ctaProjects: "View projects",
     ctaContact: "Get in touch",
     scroll: "Scroll down",
   },
   about: {
     title: "About",
-    p1: "Full Stack Developer with 3+ years of experience, working end to end: from React/Next.js front-ends to Node.js and Python back-ends, through Flutter mobile and AWS cloud.",
-    p2: "Today I work at ChronoMAX on a race timing and event management platform — serverless microservices, real time, payments and AI. I value clean code, solving real problems and learning all the time.",
+    p1: "Full-stack developer with 3+ years of experience, working from front-end to back-end: React and Next.js on the interface, Node.js and Python on the server, Flutter on mobile and AWS in the cloud.",
+    p2: "At ChronoMAX, I work on an ecosystem of products for sports and running events — web, mobile and serverless microservices on AWS, with real time, payments and AI. I prioritize clean code, well-grounded decisions and reliable delivery.",
     labels: {
       location: "Location",
       experience: "Experience",
@@ -54,7 +53,7 @@ export const en: Dictionary = {
   },
   projects: {
     title: "Projects",
-    subtitle: "A few works that represent where I am today.",
+    subtitle: "Recent professional projects.",
     featured: "Featured projects",
     viewAll: "View all projects",
     visit: "Visit",
@@ -63,16 +62,22 @@ export const en: Dictionary = {
   },
   projectsPage: {
     title: "All projects",
-    subtitle: "A selection of professional and personal work.",
+    subtitle: "A selection of my work.",
     backHome: "Back to home",
   },
   caseStudy: {
     overview: "Overview",
+    modules: "Main modules",
+    highlights: "Technical highlights",
     stack: "Tech stack",
     myRole: "My role",
     year: "Year",
     visit: "Visit project",
     code: "View code",
+    appStore: "App Store",
+    playStore: "Google Play",
+    privateNote:
+      "Private platform — access requires login and what you see depends on the user's permission level.",
     back: "Back to projects",
   },
   contact: {
@@ -94,6 +99,8 @@ export const en: Dictionary = {
   footer: {
     madeWith: "Built with Next.js, TypeScript and styled-components",
     rights: "All rights reserved.",
+    navTitle: "Navigation",
+    connectTitle: "Connect",
   },
   a11y: {
     toggleTheme: "Toggle light/dark theme",

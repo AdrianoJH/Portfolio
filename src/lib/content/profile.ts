@@ -6,7 +6,7 @@ export const profile = {
   whatsapp: "5541999607549",
   phoneDisplay: "(41) 99960-7549",
   github: "https://github.com/AdrianoJH",
-  linkedin: "https://www.linkedin.com/in/adriano-rodrigues-de-souza-1ba443231",
+  linkedin: "https://www.linkedin.com/in/adrianorodrigues-devfullstack/",
   cvUrl: "/Adriano-Souza-CV.pdf",
 };
 

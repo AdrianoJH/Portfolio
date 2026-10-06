@@ -16,22 +16,27 @@ export const Grid = styled.div`
 export const Channels = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.space.md};
 `;
 
 export const Channel = styled.a`
   display: flex;
   align-items: center;
   gap: ${({ theme }) => theme.space.md};
-  padding: ${({ theme }) => theme.space.md};
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.radii.md};
-  background: ${({ theme }) => theme.colors.surface};
-  transition: all ${({ theme }) => theme.transitions.base};
+  padding: ${({ theme }) => theme.space.md} ${({ theme }) => theme.space.xs};
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
+  transition: background ${({ theme }) => theme.transitions.base};
+
+  &:last-child {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  }
 
   &:hover {
-    border-color: ${({ theme }) => theme.colors.primary};
-    transform: translateY(-2px);
+    background: ${({ theme }) => theme.colors.surfaceAlt};
+  }
+
+  &:hover .icon {
+    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primaryContrast};
   }
 
   .icon {
@@ -44,6 +49,13 @@ export const Channel = styled.a`
     background: ${({ theme }) => theme.colors.accentSoft};
     color: ${({ theme }) => theme.colors.primary};
     flex-shrink: 0;
+    transition: background ${({ theme }) => theme.transitions.base},
+      color ${({ theme }) => theme.transitions.base};
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   div {
@@ -67,11 +79,7 @@ export const Channel = styled.a`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.space.md};
-  padding: ${({ theme }) => theme.space.xl};
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.radii.lg};
-  background: ${({ theme }) => theme.colors.surface};
+  gap: ${({ theme }) => theme.space.lg};
 `;
 
 export const Row = styled.div`
@@ -87,30 +95,36 @@ export const Row = styled.div`
 export const Field = styled.label`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.space.xs};
-  font-size: ${({ theme }) => theme.fontSizes.sm};
-  font-weight: ${({ theme }) => theme.fontWeights.medium};
-  color: ${({ theme }) => theme.colors.text};
+  gap: ${({ theme }) => theme.space.sm};
+  font-size: ${({ theme }) => theme.fontSizes.xs};
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: ${({ theme }) => theme.fontWeights.semibold};
+  color: ${({ theme }) => theme.colors.textMuted};
 `;
 
 const fieldStyles = `
   width: 100%;
   font: inherit;
   font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 0.65rem 0;
+  border: none;
+  border-bottom: 1px solid;
+  background: transparent;
 `;
 
 export const Input = styled.input`
   ${fieldStyles}
-  padding: 0.7rem 0.9rem;
-  border-radius: ${({ theme }) => theme.radii.md};
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  background: ${({ theme }) => theme.colors.bg};
+  border-bottom-color: ${({ theme }) => theme.colors.border};
   color: ${({ theme }) => theme.colors.heading};
   transition: border-color ${({ theme }) => theme.transitions.base};
 
   &:focus {
     outline: none;
-    border-color: ${({ theme }) => theme.colors.primary};
+    border-bottom-color: ${({ theme }) => theme.colors.primary};
   }
   &::placeholder {
     color: ${({ theme }) => theme.colors.textMuted};
@@ -119,18 +133,15 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   ${fieldStyles}
-  padding: 0.7rem 0.9rem;
-  min-height: 150px;
+  min-height: 130px;
   resize: vertical;
-  border-radius: ${({ theme }) => theme.radii.md};
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  background: ${({ theme }) => theme.colors.bg};
+  border-bottom-color: ${({ theme }) => theme.colors.border};
   color: ${({ theme }) => theme.colors.heading};
   transition: border-color ${({ theme }) => theme.transitions.base};
 
   &:focus {
     outline: none;
-    border-color: ${({ theme }) => theme.colors.primary};
+    border-bottom-color: ${({ theme }) => theme.colors.primary};
   }
   &::placeholder {
     color: ${({ theme }) => theme.colors.textMuted};

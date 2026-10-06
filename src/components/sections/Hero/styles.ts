@@ -9,7 +9,7 @@ const pulse = keyframes`
 
 const float = keyframes`
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  50% { transform: translateY(-8px); }
 `;
 
 export const HeroSection = styled.section`
@@ -29,7 +29,7 @@ export const HeroSection = styled.section`
     height: 70%;
     background: radial-gradient(
       circle,
-      ${({ theme }) => theme.colors.primary}22,
+      ${({ theme }) => theme.colors.primary}1f,
       transparent 70%
     );
     pointer-events: none;
@@ -44,14 +44,13 @@ export const Inner = styled.div`
   margin-inline: auto;
   padding-inline: ${({ theme }) => theme.space.lg};
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   align-items: center;
   gap: ${({ theme }) => theme.space["2xl"]};
 
   ${media.lg} {
     grid-template-columns: 1fr;
-    text-align: center;
-    justify-items: center;
+    gap: ${({ theme }) => theme.space["2xl"]};
   }
   ${media.md} {
     padding-inline: ${({ theme }) => theme.space.md};
@@ -62,7 +61,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.space.md};
-  max-width: 620px;
+  max-width: 640px;
 `;
 
 export const Badge = styled.span`
@@ -77,10 +76,7 @@ export const Badge = styled.span`
   border-radius: ${({ theme }) => theme.radii.pill};
   border: 1px solid ${({ theme }) => theme.colors.border};
   background: ${({ theme }) => theme.colors.surface};
-
-  ${media.lg} {
-    align-self: center;
-  }
+  margin-bottom: ${({ theme }) => theme.space.sm};
 
   i {
     width: 8px;
@@ -91,48 +87,40 @@ export const Badge = styled.span`
   }
 `;
 
-export const Greeting = styled.p`
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  font-size: ${({ theme }) => theme.fontSizes.lg};
-`;
-
 export const Name = styled.h1`
-  font-size: ${({ theme }) => theme.fontSizes["5xl"]};
-  font-weight: ${({ theme }) => theme.fontWeights.extra};
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.02;
   letter-spacing: -0.03em;
-  line-height: 1.05;
-
-  ${media.md} {
-    font-size: ${({ theme }) => theme.fontSizes["4xl"]};
-  }
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  color: ${({ theme }) => theme.colors.heading};
 `;
 
-export const Role = styled.h2`
+export const Role = styled.p`
   font-size: ${({ theme }) => theme.fontSizes["2xl"]};
-  font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  color: ${({ theme }) => theme.colors.textMuted};
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
+  color: ${({ theme }) => theme.colors.primary};
 
   ${media.md} {
     font-size: ${({ theme }) => theme.fontSizes.xl};
   }
 `;
 
-export const Tagline = styled.p`
-  color: ${({ theme }) => theme.colors.text};
-  font-size: ${({ theme }) => theme.fontSizes.lg};
-  line-height: 1.7;
+export const Line = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.xl};
+  line-height: 1.6;
+  color: ${({ theme }) => theme.colors.textMuted};
+  max-width: 48ch;
+
+  ${media.md} {
+    font-size: ${({ theme }) => theme.fontSizes.lg};
+  }
 `;
 
 export const Ctas = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: ${({ theme }) => theme.space.sm};
-  margin-top: ${({ theme }) => theme.space.sm};
-
-  ${media.lg} {
-    justify-content: center;
-  }
+  margin-top: ${({ theme }) => theme.space.md};
 `;
 
 export const PortraitWrap = styled.div`
@@ -141,7 +129,7 @@ export const PortraitWrap = styled.div`
   animation: ${float} 6s ease-in-out infinite;
 
   ${media.lg} {
-    justify-self: center;
+    justify-self: start;
     order: -1;
   }
 `;
@@ -149,15 +137,15 @@ export const PortraitWrap = styled.div`
 export const Portrait = styled.div`
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 380px;
   border-radius: ${({ theme }) => theme.radii.xl};
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.colors.border};
   box-shadow: 0 30px 60px ${({ theme }) => theme.colors.shadowStrong};
 
   ${media.md} {
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 320px;
   }
 
   img {

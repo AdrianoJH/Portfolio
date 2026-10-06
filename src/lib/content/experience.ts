@@ -10,9 +10,9 @@ export const experience: ExperienceItem[] = [
       es: "Desarrollador Full Stack",
     },
     description: {
-      pt: "Desenvolvimento e evolução de uma plataforma de cronometragem e gestão de eventos de corrida — web (React/Next.js), mobile (Flutter) e back-end serverless na AWS (Node.js/TypeScript e Python), com pagamentos, tempo real e IA.",
-      en: "Development and evolution of a race timing and event management platform — web (React/Next.js), mobile (Flutter) and serverless back-end on AWS (Node.js/TypeScript and Python), with payments, real time and AI.",
-      es: "Desarrollo y evolución de una plataforma de cronometraje y gestión de eventos de carrera — web (React/Next.js), móvil (Flutter) y back-end serverless en AWS (Node.js/TypeScript y Python), con pagos, tiempo real e IA.",
+      pt: "Desenvolvimento de um ecossistema de produtos para esporte e eventos de corrida — web (React/Next.js), app mobile (Flutter) e back-end serverless na AWS (Node.js/TypeScript e Python), com pagamentos, tempo real e IA.",
+      en: "Development of an ecosystem of products for sports and running events — web (React/Next.js), a mobile app (Flutter) and a serverless back-end on AWS (Node.js/TypeScript and Python), with payments, real time and AI.",
+      es: "Desarrollo de un ecosistema de productos para deporte y eventos de carrera — web (React/Next.js), app móvil (Flutter) y back-end serverless en AWS (Node.js/TypeScript y Python), con pagos, tiempo real e IA.",
     },
   },
   {

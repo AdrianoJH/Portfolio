@@ -23,8 +23,10 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5 {
     color: ${({ theme }) => theme.colors.heading};
-    line-height: 1.2;
+    font-family: ${({ theme }) => theme.fonts.heading};
+    line-height: 1.15;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
+    letter-spacing: -0.02em;
   }
 
   a { color: inherit; text-decoration: none; }

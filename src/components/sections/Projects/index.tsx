@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "@/context/LanguageContext";
-import { featuredProjects } from "@/lib/content/projects";
+import { projects } from "@/lib/content/projects";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Button } from "@/components/ui/Button";
@@ -12,6 +12,8 @@ import { Grid, MoreRow } from "./styles";
 
 export function Projects() {
   const { t } = useTranslation();
+  const flagship = projects.find((p) => p.highlight);
+  const others = projects.filter((p) => p.featured && !p.highlight);
 
   return (
     <Section id="projetos" alt>
@@ -21,7 +23,8 @@ export function Projects() {
         subtitle={t.projects.subtitle}
       />
       <Grid>
-        {featuredProjects.map((project) => (
+        {flagship && <ProjectCard project={flagship} featured />}
+        {others.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}
       </Grid>

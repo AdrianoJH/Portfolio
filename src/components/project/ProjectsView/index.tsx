@@ -12,6 +12,8 @@ import { Wrapper, Back, Grid } from "./styles";
 
 export function ProjectsView() {
   const { t } = useTranslation();
+  const flagship = projects.find((p) => p.highlight);
+  const rest = projects.filter((p) => !p.highlight);
 
   return (
     <Wrapper>
@@ -28,7 +30,8 @@ export function ProjectsView() {
           subtitle={t.projectsPage.subtitle}
         />
         <Grid>
-          {projects.map((project) => (
+          {flagship && <ProjectCard project={flagship} featured />}
+          {rest.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </Grid>

@@ -8,6 +8,10 @@ export type Localized<T = string> = Record<Locale, T>;
 export interface ProjectLink {
   demo?: string;
   repo?: string;
+  /** Link da App Store (projetos mobile). */
+  appStore?: string;
+  /** Link da Google Play (projetos mobile). */
+  playStore?: string;
 }
 
 export interface Project {
@@ -18,6 +22,8 @@ export interface Project {
   highlight?: boolean;
   /** Aparece na home (seção "Projetos em destaque"). */
   featured?: boolean;
+  /** Plataforma privada: o acesso requer login (exibe aviso no case). */
+  private?: boolean;
   image: string;
   tech: string[];
   links: ProjectLink;
@@ -25,6 +31,10 @@ export interface Project {
   summary: Localized;
   /** Parágrafos do case study. */
   description: Localized<string[]>;
+  /** Principais módulos/funcionalidades, opcional (para sistemas grandes). */
+  modules?: Localized<string[]>;
+  /** Destaques técnicos em tópicos, opcional. */
+  highlights?: Localized<string[]>;
   /** Papel/contexto, opcional. */
   role?: Localized;
 }

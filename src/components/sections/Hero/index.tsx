@@ -9,10 +9,9 @@ import {
   Inner,
   Content,
   Badge,
-  Greeting,
   Name,
   Role,
-  Tagline,
+  Line,
   Ctas,
   PortraitWrap,
   Portrait,
@@ -30,10 +29,9 @@ export function Hero() {
             <i aria-hidden="true" />
             {t.hero.available}
           </Badge>
-          <Greeting>{t.hero.greeting}</Greeting>
           <Name>{profile.shortName}</Name>
           <Role>{t.hero.role}</Role>
-          <Tagline>{t.hero.tagline}</Tagline>
+          <Line>{t.hero.line}</Line>
           <Ctas>
             <Button as="a" href="#projetos" size="lg">
               {t.hero.ctaProjects}
@@ -59,7 +57,7 @@ export function Hero() {
         <PortraitWrap>
           <Portrait>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/perfil.jpeg" alt={profile.name} />
+            <img src="/images/perfil.png" alt={profile.name} />
           </Portrait>
         </PortraitWrap>
       </Inner>

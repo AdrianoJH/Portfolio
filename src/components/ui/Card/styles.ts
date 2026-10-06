@@ -5,6 +5,9 @@ export const StyledCard = styled.div<{ $interactive?: boolean }>`
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.lg};
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: transform ${({ theme }) => theme.transitions.slow},
     border-color ${({ theme }) => theme.transitions.base},
     box-shadow ${({ theme }) => theme.transitions.base};

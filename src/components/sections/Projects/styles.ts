@@ -3,12 +3,10 @@ import { media } from "@/lib/theme";
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: ${({ theme }) => theme.space.lg};
+  margin-top: ${({ theme }) => theme.space.xl};
 
-  ${media.lg} {
-    grid-template-columns: repeat(2, 1fr);
-  }
   ${media.sm} {
     grid-template-columns: 1fr;
   }

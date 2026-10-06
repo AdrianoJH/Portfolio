@@ -1,76 +1,57 @@
 import styled from "styled-components";
 import { media } from "@/lib/theme";
 
-export const Timeline = styled.ol`
-  position: relative;
-  max-width: 820px;
-  margin-inline: auto;
-  padding-left: ${({ theme }) => theme.space.xl};
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 7px;
-    top: 6px;
-    bottom: 6px;
-    width: 2px;
-    background: ${({ theme }) => theme.colors.border};
-  }
-
-  ${media.sm} {
-    padding-left: ${({ theme }) => theme.space.lg};
-  }
+export const List = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
-export const Item = styled.li`
-  position: relative;
-  padding-bottom: ${({ theme }) => theme.space.xl};
+export const Item = styled.article`
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: ${({ theme }) => theme.space.xl};
+  padding: ${({ theme }) => theme.space.xl} 0;
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
 
   &:last-child {
-    padding-bottom: 0;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: calc(-${({ theme }) => theme.space.xl} + 1px);
-    top: 4px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.colors.bg};
-    border: 3px solid ${({ theme }) => theme.colors.primary};
-  }
-
-  ${media.sm} {
-    &::before {
-      left: calc(-${({ theme }) => theme.space.lg} + 1px);
-    }
+  ${media.md} {
+    grid-template-columns: 1fr;
+    gap: ${({ theme }) => theme.space.sm};
+    padding: ${({ theme }) => theme.space.lg} 0;
   }
 `;
 
 export const Period = styled.span`
-  display: inline-block;
-  font-size: ${({ theme }) => theme.fontSizes.xs};
-  font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  letter-spacing: 0.04em;
+  font-family: ${({ theme }) => theme.fonts.mono};
+  font-size: ${({ theme }) => theme.fontSizes.sm};
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
   color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme }) => theme.colors.accentSoft};
-  padding: 0.25rem 0.65rem;
-  border-radius: ${({ theme }) => theme.radii.pill};
-  margin-bottom: ${({ theme }) => theme.space.sm};
+  padding-top: 6px;
+  white-space: nowrap;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.space.xs};
 `;
 
 export const Company = styled.h3`
-  font-size: ${({ theme }) => theme.fontSizes.xl};
+  font-size: ${({ theme }) => theme.fontSizes["2xl"]};
+  letter-spacing: -0.02em;
 `;
 
 export const Role = styled.p`
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: ${({ theme }) => theme.fontWeights.semibold};
-  margin-bottom: ${({ theme }) => theme.space.xs};
+  color: ${({ theme }) => theme.colors.text};
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
 `;
 
 export const Desc = styled.p`
   color: ${({ theme }) => theme.colors.textMuted};
+  line-height: 1.65;
+  margin-top: ${({ theme }) => theme.space.sm};
+  max-width: 62ch;
 `;

@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div<{ $align: "left" | "center" }>`
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.space.sm};
+  gap: ${({ theme }) => theme.space.md};
   align-items: ${({ $align }) => ($align === "center" ? "center" : "flex-start")};
   text-align: ${({ $align }) => $align};
-  margin-bottom: ${({ theme }) => theme.space.xl};
-  max-width: ${({ $align }) => ($align === "center" ? "640px" : "none")};
+  margin-bottom: ${({ theme }) => theme.space["2xl"]};
+  max-width: ${({ $align }) => ($align === "center" ? "680px" : "none")};
   margin-inline: ${({ $align }) => ($align === "center" ? "auto" : "0")};
 `;
 
@@ -31,12 +31,15 @@ export const Eyebrow = styled.span`
 `;
 
 export const Title = styled.h2`
-  font-size: ${({ theme }) => theme.fontSizes["3xl"]};
-  font-weight: ${({ theme }) => theme.fontWeights.extra};
-  letter-spacing: -0.02em;
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  letter-spacing: -0.03em;
+  line-height: 1.05;
 `;
 
 export const Subtitle = styled.p`
   color: ${({ theme }) => theme.colors.textMuted};
-  font-size: ${({ theme }) => theme.fontSizes.lg};
+  font-size: ${({ theme }) => theme.fontSizes.xl};
+  line-height: 1.5;
+  max-width: 60ch;
 `;

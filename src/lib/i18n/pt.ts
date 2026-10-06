@@ -10,18 +10,17 @@ export const pt = {
     contact: "Contato",
   },
   hero: {
-    greeting: "Olá, eu sou",
-    role: "Desenvolvedor Full Stack",
-    tagline: "Construo aplicações web, mobile e serviços na nuvem — do front-end em React/Next.js ao back-end serverless na AWS.",
     available: "Aberto a novas oportunidades",
+    role: "Desenvolvedor Full Stack",
+    line: "Aplicações web, mobile e back-end — da arquitetura à entrega.",
     ctaProjects: "Ver projetos",
     ctaContact: "Entrar em contato",
     scroll: "Role para baixo",
   },
   about: {
     title: "Sobre",
-    p1: "Desenvolvedor Full Stack com mais de 3 anos de experiência, atuando de ponta a ponta: do front-end em React/Next.js ao back-end em Node.js e Python, passando por mobile com Flutter e nuvem AWS.",
-    p2: "Hoje contribuo com a ChronoMAX numa plataforma de cronometragem e gestão de eventos de corrida — microsserviços serverless, tempo real, pagamentos e IA. Gosto de código limpo, de resolver problemas de verdade e de aprender o tempo todo.",
+    p1: "Desenvolvedor full-stack com mais de 3 anos de experiência, atuando do front-end ao back-end: React e Next.js na interface, Node.js e Python no servidor, Flutter no mobile e AWS na nuvem.",
+    p2: "Na ChronoMAX, trabalho em um ecossistema de produtos para esporte e eventos de corrida — web, mobile e microsserviços serverless na AWS, com tempo real, pagamentos e IA. Priorizo código limpo, decisões bem fundamentadas e entregas confiáveis.",
     labels: {
       location: "Localização",
       experience: "Experiência",
@@ -54,7 +53,7 @@ export const pt = {
   },
   projects: {
     title: "Projetos",
-    subtitle: "Alguns trabalhos que representam meu momento atual.",
+    subtitle: "Projetos profissionais recentes.",
     featured: "Projetos em destaque",
     viewAll: "Ver todos os projetos",
     visit: "Visitar",
@@ -63,16 +62,22 @@ export const pt = {
   },
   projectsPage: {
     title: "Todos os projetos",
-    subtitle: "Uma seleção de trabalhos profissionais e pessoais.",
+    subtitle: "Uma seleção dos meus trabalhos.",
     backHome: "Voltar ao início",
   },
   caseStudy: {
     overview: "Visão geral",
+    modules: "Principais módulos",
+    highlights: "Destaques técnicos",
     stack: "Tecnologias",
     myRole: "Meu papel",
     year: "Ano",
     visit: "Visitar projeto",
     code: "Ver código",
+    appStore: "App Store",
+    playStore: "Google Play",
+    privateNote:
+      "Plataforma privada — o acesso requer login e o que se vê depende do nível de permissão do usuário.",
     back: "Voltar aos projetos",
   },
   contact: {
@@ -94,6 +99,8 @@ export const pt = {
   footer: {
     madeWith: "Feito com Next.js, TypeScript e styled-components",
     rights: "Todos os direitos reservados.",
+    navTitle: "Navegação",
+    connectTitle: "Conecte-se",
   },
   a11y: {
     toggleTheme: "Alternar tema claro/escuro",
